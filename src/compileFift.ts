@@ -53,7 +53,7 @@ export async function compileFift(fiftAsmCode: string, customCompilerCode?: stri
         return pointer
     };
     const mod = await CompilerModule({
-        wasmBinary: fs.readFileSync(`${__dirname}/funcfiftlib.wasm`),
+        wasmBinary: fs.readFileSync(`${__dirname}/funcfiftlib/funcfiftlib.wasm`),
         printErr: (s: string) => {
             stderr.push(s);
         },
