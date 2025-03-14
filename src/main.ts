@@ -1,3 +1,3 @@
-export { compileFift } from './compileFift';
-export { extractDebugSymbols } from './extractDebugSymbols';
+export * from './compileFift';
+export * from './extractDebugSymbols';
 export * from './types';
