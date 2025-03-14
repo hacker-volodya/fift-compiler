@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fift symbols extractor should extract symbols from func fift-asm 1`] = `
+{
+  "globals": [
+    {
+      "index": 1,
+      "name": "data::counter",
+    },
+  ],
+  "procedures": [
+    {
+      "cellHash": "12c594cd44b75c218dd74be415be5b35d11481ccd3d6e7a26ba45e903d52edfa",
+      "methodId": 0,
+      "name": "main",
+    },
+    {
+      "cellHash": "06c0e4431c841de3452704213cb23170922691e994cf98eb318c7fd409bfa957",
+      "methodId": 1,
+      "name": "load_data",
+    },
+    {
+      "cellHash": "9f099c93b986b3c2508324139543e3ffb867125e18fe03bde5c86b113c5d751a",
+      "methodId": 2,
+      "name": "save_data",
+    },
+    {
+      "cellHash": "c6e2185119d6c5553ec261b6ddd244e2fc2a37c9836578399c8be9759a8a3f24",
+      "methodId": 127487,
+      "name": "get_counter",
+    },
+  ],
+}
+`;
+
+exports[`fift symbols extractor should extract symbols from tact fift-asm 1`] = `
+{
+  "globals": [
+    {
+      "index": 1,
+      "name": "__tact_context",
+    },
+    {
+      "index": 2,
+      "name": "__tact_context_sender",
+    },
+    {
+      "index": 3,
+      "name": "__tact_child_contract_codes",
+    },
+    {
+      "index": 4,
+      "name": "__tact_randomized",
+    },
+  ],
+  "procedures": [
+    {
+      "cellHash": "3260aaac0f4148cdd1a240d0c2e74ed3cd74cea354936df3fb0def62868d623b",
+      "methodId": 0,
+      "name": "main",
+    },
+    {
+      "cellHash": "0a1c1db6d998fcd131cd23b05a53ab627ef91b7cbefd06a7e3843fd9a5b5cad8",
+      "methodId": 1,
+      "name": "__tact_sha256",
+    },
+    {
+      "cellHash": "c46fc6953a9d7dce5ea4b4a64d5327bbcdca0af8a6c6050b1d527d7b7fb71485",
+      "methodId": 2,
+      "name": "__tact_context_get",
+    },
+    {
+      "cellHash": "63733b09c47b44a02872792256e350feb1b5a43f2f2cb3bb37af912eee27e133",
+      "methodId": 3,
+      "name": "__tact_context_get_sender",
+    },
+    {
+      "cellHash": "5c54171435848aabb71af5cb8126d998908ca1bef3570770aa15ef28a3e69a20",
+      "methodId": 4,
+      "name": "$Deploy$_load_without_opcode",
+    },
+    {
+      "cellHash": "5eff2128f41afa81ab9bdfeba53a3857083c6706b3886f200b2b0c487dcb81e5",
+      "methodId": 5,
+      "name": "$DeployOk$_store",
+    },
+    {
+      "cellHash": "37c31a5c28abb18c0c5e12842e840b602c891eacaa200c79a538c3dab50ba0ca",
+      "methodId": 6,
+      "name": "$DeployOk$_store_cell",
+    },
+    {
+      "cellHash": "049ee09d7ba73e3cd5b1777d454d855a3b9e6f39a4cd00930011766f56cf6c2b",
+      "methodId": 7,
+      "name": "$Add$_load_without_opcode",
+    },
+    {
+      "cellHash": "d39eb07be20f48ac225141602affaa4b0206988c1c9ffd4e17d403ba6bde2b15",
+      "methodId": 8,
+      "name": "$TestContract$_store",
+    },
+    {
+      "cellHash": "a49a30e6102e8e769e561d560bea0d8d858d5593a6d59206ef6bdff7b8c2513d",
+      "methodId": 9,
+      "name": "$TestContract$_load",
+    },
+    {
+      "cellHash": "f1323a50343fc91ff2c473fa98693c9fc16ddb0d89fb8c84f19333ebf5828147",
+      "methodId": 10,
+      "name": "$StateInit$_not_null",
+    },
+    {
+      "cellHash": "e14522ebd84f53cff85c10912c95856d479ca7e39e50971c460de92c6aa65719",
+      "methodId": 11,
+      "name": "$TestContract$init$_load",
+    },
+    {
+      "cellHash": "644ef5250652bdfa6844e3e13a61c1eb6a52688e5503308f9a5359c7c6dbdb76",
+      "methodId": 12,
+      "name": "$TestContract$_contract_init",
+    },
+    {
+      "cellHash": "f35cb637f0b9ec7fc49b10bfc17e14856646042993cc22a7fd9827837f80d8a8",
+      "methodId": 13,
+      "name": "$TestContract$_contract_load",
+    },
+    {
+      "cellHash": "ec8311f004e44f9250a084427c831d0e78fa055994b64706848cfb95b0a96ce7",
+      "methodId": 14,
+      "name": "$TestContract$_contract_store",
+    },
+    {
+      "cellHash": "40d98146a47dbe3bbc9c7205450b5da355c567deb3ea11d30a74c85ef592e945",
+      "methodId": 15,
+      "name": "$TestContract$_fun_counter",
+    },
+    {
+      "cellHash": "44086a5ce86162fe9871990921a1899c14a6945e8e1aa59196b86b89f254e8d6",
+      "methodId": 16,
+      "name": "$TestContract$_fun_id",
+    },
+    {
+      "cellHash": "e60694ed97e7305cd84b033759280f67e32729262d3586a2b47e756ff87935bc",
+      "methodId": 17,
+      "name": "$SendParameters$_constructor_bounce_to_value_mode_body_code_data",
+    },
+    {
+      "cellHash": "0846766815e205b63167546800fca26d2a3dd357daf012aee8372902b4ad7142",
+      "methodId": 18,
+      "name": "$TestContract$_fun_forward",
+    },
+    {
+      "cellHash": "316c376faf6d09a224405ff5b75e0c869383b5db03312130921da47b77563986",
+      "methodId": 19,
+      "name": "$TestContract$_fun_notify",
+    },
+    {
+      "cellHash": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "methodId": 20,
+      "name": "$DeployOk$_constructor_queryId",
+    },
+    {
+      "cellHash": "9273e69ed60094e842d5d6b65f0db7c45f04813016619c8a04b5cafd146be0c0",
+      "methodId": 104984,
+      "name": "%counter",
+    },
+    {
+      "cellHash": "c90dd7029e7061d11246cfec8dd656ba601fe398c4a6741db79ad42d44e9a51c",
+      "methodId": 105872,
+      "name": "%id",
+    },
+  ],
+}
+`;

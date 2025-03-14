@@ -1,0 +1,49 @@
+"Asm.fif" include
+// automatically generated from `contracts/hello_world.fc` incl:`contracts/imports/stdlib.fc`
+PROGRAM{
+  DECLPROC load_data
+  DECLPROC save_data
+  DECLPROC recv_internal
+  127487 DECLMETHOD get_counter
+  DECLGLOBVAR data::counter
+  load_data PROCINLINE:<{
+    //
+    c4 PUSH     //  _1
+    CTOS        //  data
+    32 LDU      //  _8 _7
+    DROP        //  _6
+    data::counter SETGLOB
+  }>
+  save_data PROCINLINE:<{
+    //
+    data::counter GETGLOB       //  _0
+    NEWC        //  _0 _1
+    32 STU      //  _3
+    ENDC        //  _4
+    c4 POP
+  }>
+  recv_internal PROC:<{
+    //  my_balance msg_value in_msg_full in_msg_body   
+    3 1 BLKDROP2        //  in_msg_body
+    DUP //  in_msg_body in_msg_body
+    SEMPTY      //  in_msg_body _4
+    IFJMP:<{    //  in_msg_body
+      DROP      //
+    }>  //  in_msg_body
+    32 LDU      //  _18 _17
+    DROP        //  op
+    load_data INLINECALLDICT
+    1 EQINT     //  _11
+    IF:<{       //
+      data::counter GETGLOB     //  _12
+      INC       //  _15
+      data::counter SETGLOB
+      save_data INLINECALLDICT
+    }>  //
+  }>
+  get_counter PROC:<{
+    //
+    load_data INLINECALLDICT
+    data::counter GETGLOB       //  _1
+  }>
+}END>c
