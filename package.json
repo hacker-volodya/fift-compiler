@@ -6,7 +6,7 @@
   "types": "dist/main.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && copyfiles -u 1 src/DebugAsm.fif dist/",
+    "build": "tsc && copyfiles -u 1 src/DebugAsm.fif dist/ && copyfiles -u 1 src/funcfiftlib/* dist/",
     "test": "jest",
     "prepublish": "pnpm build"
   },

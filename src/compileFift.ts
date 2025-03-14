@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-const CompilerModule = require("./funcfiftlib.js");
+const CompilerModule = require("./funcfiftlib/funcfiftlib.js");
 
 type Pointer = unknown;
 
