@@ -14,7 +14,7 @@ import { compileFift, extractDebugSymbols } from 'fift-compiler';
 const fiftSource = fs.readFileSync(`program.fif`).toString('utf8');
 const compileResult = await compileFift(fiftSource);
 if (compileResult.status == 'error') {
-    throw new Error(`Compilation failed: ${JSON.stringify(result)}`);
+    throw new Error(`Compilation failed: ${JSON.stringify(compileResult)}`);
 }
 console.log(`Code BOC base64: ${compileResult.codeBoc}`);
 const debugSymbols = await extractDebugSymbols(fiftSource);
